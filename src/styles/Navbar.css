@@ -1,0 +1,22 @@
+.nav-container {
+    height: 100vh;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 10px;
+    pointer-events: none;
+}
+
+.navbar a {
+    padding: 0 4%;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    pointer-events: auto;
+}
+
