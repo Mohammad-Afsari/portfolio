@@ -6,7 +6,11 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <ParticlesBackground />
+      <div>
+        <ParticlesBackground />
+      </div>
+      <div className='test1'>hello</div>
+      <p>dog</p>
     </div>
   );
 }
