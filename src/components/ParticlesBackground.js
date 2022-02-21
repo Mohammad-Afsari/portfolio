@@ -14,7 +14,13 @@ const ParticlesBackground = () => {
         console.log(container);
     };
 
+    //url('https://github.com/Mohammad-Afsari/portfolio/blob/master/src/components/imgs/profilePic2.jpg?raw=true')
+
     return (
+        <section>
+            <div className="profilePic">
+                
+            </div>
             <div className="particles-js" >
                 <Particles
                     id="tsparticles"
@@ -25,7 +31,7 @@ const ParticlesBackground = () => {
                         "color": {
                             "value": "#15191e"
                         },
-                        "image": "url('https://github.com/Mohammad-Afsari/portfolio/blob/master/src/components/imgs/profilePic2.jpg?raw=true')",
+                        "image": "",
                         "position": "50% 50%",
                         "repeat": "no-repeat",
                         "size": "cover",
@@ -145,7 +151,7 @@ const ParticlesBackground = () => {
                     }}
                     />
                 </div>
-
+            </section>
         );
     };
     
