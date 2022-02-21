@@ -1,23 +1,23 @@
 .nav-container {
-
-    z-index: 1000;
-}
-
-.navbar {
+    position: fixed;
     display: flex;
-    justify-content: center;
-    max-width: 600px;
-    margin: 0 auto;
+    align-items: center;
+    left: 40%;
+    bottom: 2%;
+    z-index: 5;
     margin-top: 10px;
-    pointer-events: none;
+    margin-bottom: 12px;
+    border: 2px solid rgba(2, 2, 2, 0.7);
+    background: rgba(138, 115, 115, 0.2);
+    border-radius: 50px;
+    height: 45px;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1)
 }
 
-.navbar a {
-    padding: 0 4%;
-    font-size: 20px;
+.menuItem {
+    color: rgb(72, 157, 255);
+    padding: 0 10px 0 10px;
     text-decoration: none;
-    color: white;
-    pointer-events: auto;
-    z-index: 2;
+    font-size: 25px;
 }
 
