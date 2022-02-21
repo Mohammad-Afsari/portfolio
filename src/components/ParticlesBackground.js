@@ -15,7 +15,6 @@ const ParticlesBackground = () => {
     };
 
     return (
-        <div className="section">
             <div className="particles-js" >
                 <Particles
                     id="tsparticles"
@@ -26,7 +25,7 @@ const ParticlesBackground = () => {
                         "color": {
                             "value": "#15191e"
                         },
-                        "image": "url('https://github.com/Mohammad-Afsari/restaurant_page/blob/main/dist/img/homebackground.jpg?raw=true')",
+                        "image": "url('https://github.com/Mohammad-Afsari/portfolio/blob/master/src/components/imgs/profilePic2.jpg?raw=true')",
                         "position": "50% 50%",
                         "repeat": "no-repeat",
                         "size": "cover",
@@ -146,7 +145,7 @@ const ParticlesBackground = () => {
                     }}
                     />
                 </div>
-        </div>
+
         );
     };
     
