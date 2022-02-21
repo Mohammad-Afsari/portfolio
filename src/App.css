@@ -2,10 +2,12 @@
 
 
 body {
-    margin: 0;
+    margin: auto;
     font-family: 'Encode Sans', sans-serif;
+    background-color: rgb(1, 1, 20);
 }
 
 .test1 {
-    background-color: white;
+    background-color: wheat;
+    height: 100vh;
 }
