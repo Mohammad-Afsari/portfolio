@@ -5,10 +5,14 @@
     margin: 0vh auto;
 }
 
+#tsparticles {
+    height: 10px;
+}
+
 .particles-js {
 
     height: 100vh;
-    width: 150vh;
+    width: 100vh;
     z-index: -10;
 
 
