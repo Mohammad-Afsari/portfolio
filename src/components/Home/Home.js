@@ -1,6 +1,7 @@
 import './Home.css'
 import React, { useEffect, useState } from 'react'
 import TextTransition, { presets } from "react-text-transition";
+import profilePicCropped from '../imgs/profilePicCropped.jpg'
 
 const messages = [
   "Data Analyst",
@@ -31,8 +32,10 @@ const Home = () => {
                     springConfig={ presets.wobbly }
                     noOverflow= {true}
                 /></h2>
+
             </div>
-            <div className="profilePic"></div>
+            <div><img className='profilePic' src={profilePicCropped} alt="" /></div>
+            {/* <div className="profilePic"></div> */}
         </div>
         );
     };
