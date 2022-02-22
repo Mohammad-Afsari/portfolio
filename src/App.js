@@ -1,12 +1,12 @@
 import './App.css';
-import ParticlesBackground from './components/ParticlesBackground';
 import Navbar from './components/Navbar/Navbar';
+import Home from './components/Home/Home';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <ParticlesBackground />
+      <Home />
       <div className='test1'>hello</div>
     </div>
   );
