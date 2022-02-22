@@ -63,4 +63,5 @@
 
 .menuItem:hover {
     color: rgb(41, 87, 139);
+    background: white;
 }
