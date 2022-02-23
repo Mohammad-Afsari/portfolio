@@ -2,6 +2,9 @@ import './Home.css'
 import React, { useEffect, useState } from 'react'
 import TextTransition, { presets } from "react-text-transition";
 import profilePicCropped from '../imgs/profilePicCropped.jpg'
+import { SiGithub } from 'react-icons/si'
+import { SiLinkedin } from 'react-icons/si'
+import { MdEmail } from 'react-icons/md'
 
 const messages = [
   "Data Analyst",
@@ -25,17 +28,27 @@ const Home = () => {
     return (
         <div className="container section">
             <div className="intro">
+              <div className='welcome'>
                 <h1>Hi,</h1>
                 <p>I'm Mohammad Afsari </p>
                 <h2><TextTransition
+                    className='transition-text'
                     text={ messages[index % messages.length] }
                     springConfig={ presets.wobbly }
                     noOverflow= {true}
-                /></h2>
-
+                    />
+                </h2>
+                <section className='links'>
+                  <p><a href="#mail"><MdEmail className='link-item'/></a></p>
+                  <p><a href="github"><SiGithub className='link-item' /></a></p>
+                  <p><a href="linkedin"><SiLinkedin className='link-item'/></a></p>
+                </section>
+              </div>
             </div>
-            <div><img className='profilePic' src={profilePicCropped} alt="" /></div>
-            {/* <div className="profilePic"></div> */}
+
+            <div className='pictureContainer'>
+              <img className='profilePic' src={profilePicCropped} alt="" />
+            </div>
         </div>
         );
     };
