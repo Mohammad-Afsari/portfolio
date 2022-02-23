@@ -2,6 +2,7 @@ import './Home.css'
 import React, { useEffect, useState } from 'react'
 import TextTransition, { presets } from "react-text-transition";
 import profilePicCropped from '../imgs/profilePicCropped.jpg'
+import profilePicCroppedHD from '../imgs/profilePicCroppedHD.jpg'
 import { SiGithub } from 'react-icons/si'
 import { SiLinkedin } from 'react-icons/si'
 import { MdEmail } from 'react-icons/md'
@@ -47,7 +48,7 @@ const Home = () => {
               </div>
             </div>
             <div className='pictureContainer'>
-              <img className='profilePic' src={profilePicCropped} alt="" />
+              <img className='profilePic' src={profilePicCroppedHD} alt="" />
             </div>
         </div>
         );
