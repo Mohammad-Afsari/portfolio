@@ -1,0 +1,8 @@
+:root {
+    --blueTheme: rgb(42, 138, 248);
+}
+
+.about {
+    height: 100vh;
+    color: white;
+}
