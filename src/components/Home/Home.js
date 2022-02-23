@@ -5,6 +5,7 @@ import profilePicCropped from '../imgs/profilePicCropped.jpg'
 import { SiGithub } from 'react-icons/si'
 import { SiLinkedin } from 'react-icons/si'
 import { MdEmail } from 'react-icons/md'
+import Particles from "react-tsparticles";
 
 const messages = [
   "Data Analyst",
@@ -45,7 +46,6 @@ const Home = () => {
                 </section>
               </div>
             </div>
-
             <div className='pictureContainer'>
               <img className='profilePic' src={profilePicCropped} alt="" />
             </div>
