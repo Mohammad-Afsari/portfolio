@@ -5,10 +5,16 @@ import { VscDebugStart } from 'react-icons/vsc'
 import { MdEngineering } from 'react-icons/md'
 import { GiGraduateCap } from 'react-icons/gi'
 import { FaDatabase } from 'react-icons/fa'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const About = () => {
+    useEffect(() => {
+        AOS.init({duration: 2200});
+    }, [])
     return ( 
-        <div className="journey">
+        <div className="journey" data-AOS="fade-up">
             <VerticalTimeline lineColor={ 'rgb(42, 138, 248)' }>
 
                 {/* Start */}
@@ -20,10 +26,10 @@ const About = () => {
                 {/* University / Study */}
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
-                    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                    contentStyle={{ background: 'rgb(42, 138, 248)', color: '#fff' }}
+                    contentArrowStyle={{ borderRight: '7px solid  rgb(42, 138, 248)' }}
                     date="September 2013 - June 2017"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                    iconStyle={{ background: 'rgb(42, 138, 248)', color: '#fff' }}
                     icon ={<GiGraduateCap />}
                 >
                     <h3 className="vertical-timeline-element-title">Student</h3>
@@ -36,10 +42,10 @@ const About = () => {
                 {/* Mott MacDonald Graduate Engineer */}
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
-                    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                    contentStyle={{ background: 'rgb(42, 138, 248)', color: '#fff' }}
+                    contentArrowStyle={{ borderRight: '7px solid  rgb(42, 138, 248)' }}
                     date="September 2017 - January 2019"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                    iconStyle={{ background: 'rgb(42, 138, 248)', color: '#fff' }}
                     icon={<MdEngineering />}
                 >
                     <h3 className="vertical-timeline-element-title">Graduate Engineer</h3>
@@ -57,10 +63,10 @@ const About = () => {
                 {/* Mott MacDonald Data Analyst */}
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
-                    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                    contentStyle={{ background: 'rgb(42, 138, 248)', color: '#fff' }}
+                    contentArrowStyle={{ borderRight: '7px solid  rgb(42, 138, 248)' }}
                     date="January 2019 - September 2021"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                    iconStyle={{ background: 'rgb(42, 138, 248)', color: '#fff' }}
                     icon={<FaDatabase/>}
                 >
                     <h3 className="vertical-timeline-element-title">Data Analyst</h3>
@@ -79,8 +85,8 @@ const About = () => {
                 {/* Cognizant - Data Analyst */}
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
-                    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                    contentStyle={{ background: 'rgb(42, 138, 248)', color: '#fff' }}
+                    contentArrowStyle={{ borderRight: '7px solid  rgb(42, 138, 248)' }}
                     date="September 2021 - Present"
                     iconStyle={{ background: 'rgb(255, 179, 39)', color: '#fff' }}
                     icon={<FaDatabase/>}
