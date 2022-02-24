@@ -1,12 +1,12 @@
 import './Home.css'
 import React, { useEffect, useState } from 'react'
 import TextTransition, { presets } from "react-text-transition";
-import profilePicCropped from '../imgs/profilePicCropped.jpg'
 import profilePicCroppedHD from '../imgs/profilePicCroppedHD.jpg'
 import { SiGithub } from 'react-icons/si'
 import { SiLinkedin } from 'react-icons/si'
 import { MdEmail } from 'react-icons/md'
-import Particles from "react-tsparticles";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const messages = [
   "Data Analyst",
@@ -26,9 +26,12 @@ const Home = () => {
         return () => clearTimeout(intervalId);
       }, []);
 
+    useEffect(() => {
+      AOS.init({duration: 3000});
+      }, [])
 
     return (
-        <div className="container section">
+        <div className="container section" data-AOS="fade-up">
             <div className="intro">
               <div className='welcome'>
                 <h1>Hi,</h1>
