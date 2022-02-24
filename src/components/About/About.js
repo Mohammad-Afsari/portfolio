@@ -3,7 +3,7 @@
 import '../imgs/profilePic.jpg'
 import './About.css'
 import { Carousel } from 'react-carousel-minimal';
-import AOS from 'aos';
+import aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
@@ -25,12 +25,12 @@ const About = () => {
     
     
     useEffect(() => {
-    AOS.init({duration: 2200});
+    aos.init({duration: 2200});
     }, [])
 
 
     return ( 
-        <div className="about" data-AOS="fade-up">
+        <div className="about" data-aos="fade-up">
             <div className='aboutPhotos'>
                 <div>
                 <Carousel

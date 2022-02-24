@@ -5,7 +5,7 @@ import profilePicCroppedHD from '../imgs/profilePicCroppedHD.jpg'
 import { SiGithub } from 'react-icons/si'
 import { SiLinkedin } from 'react-icons/si'
 import { MdEmail } from 'react-icons/md'
-import AOS from 'aos';
+import aos from 'aos';
 import 'aos/dist/aos.css';
 
 const messages = [
@@ -27,11 +27,11 @@ const Home = () => {
       }, []);
 
     useEffect(() => {
-      AOS.init({duration: 3000});
+      aos.init({duration: 3000});
       }, [])
 
     return (
-        <div className="container section" data-AOS="fade-up">
+        <div className="container section" data-aos="fade-up">
             <div className="intro">
               <div className='welcome'>
                 <h1>Hi,</h1>

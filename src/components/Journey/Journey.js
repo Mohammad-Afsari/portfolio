@@ -5,16 +5,16 @@ import { VscDebugStart } from 'react-icons/vsc'
 import { MdEngineering } from 'react-icons/md'
 import { GiGraduateCap } from 'react-icons/gi'
 import { FaDatabase } from 'react-icons/fa'
-import AOS from 'aos';
+import aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
 const About = () => {
     useEffect(() => {
-        AOS.init({duration: 2200});
+        aos.init({duration: 2200});
     }, [])
     return ( 
-        <div className="journey" data-AOS="fade-up">
+        <div className="journey" data-aos="fade-up">
             <VerticalTimeline lineColor={ 'rgb(42, 138, 248)' }>
 
                 {/* Start */}
