@@ -1,8 +1,63 @@
 :root {
-    --blueTheme: rgb(42, 138, 248);
+    --introDetailsHighlight: rgb(42, 138, 248);
 }
 
 .about {
     height: 100vh;
     color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.aboutPhotos {
+    margin: 0 auto;
+    padding: 0 30px 450px 30px;
+}
+
+.aboutIntro {
+    padding: 0 30px 500px 30px;
+}
+
+.introDetail {
+    word-spacing: 10px;
+    font-size: 20px;
+}
+
+.introDetail span {
+    color: var(--introDetailsHighlight);
+}
+
+@media (max-width: 769px) {
+    .about {
+        grid-template-columns: 1fr;
+    }
+    .aboutPhotos {
+        margin: 0 auto;
+        padding: 0 30px 0px 30px;
+    }
+
+    .introDetail {
+        word-spacing: 2px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 280px) {
+    .about {
+        grid-template-columns: 1fr;
+    }
+    .aboutPhotos {
+        margin: 0 auto;
+        padding: 0 30px 0px 30px;
+    }
+
+    .introDetail {
+        word-spacing: 0px;
+        font-size: 12px;
+    }
+
+    .aboutMe {
+        font-size: 18px;
+    }
 }
