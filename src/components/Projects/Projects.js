@@ -68,7 +68,7 @@ const Projects = () => {
             </article>
             <article className="projectsItem projectsItem6" data-aos="fade-up">
                 <div className=''>
-                    <img className='projectImg dlish' src="https://github.com/Mohammad-Afsari/tic_tac_toe/blob/main/img/tictactoe.PNG?raw=true" alt="" />
+                    <img className='projectImg dlish' src="https://github.com/Mohammad-Afsari/portfolio/blob/master/src/components/imgs/tictactoe.png?raw=true" alt="" />
                 </div>
                 <div className="buttonLinks">
                     <a href="https://github.com/Mohammad-Afsari/tic_tac_toe"><SiGithub /></a>
