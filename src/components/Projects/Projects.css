@@ -1,69 +1,82 @@
+:root {
+    --globalColor: rgb(42, 138, 248);
+}
+
 .projects {
     height: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 80vw;
+    grid-template-columns: 1fr 1fr;
+    width: 90vw;
     margin: 100px auto;
-
     gap: 5vw;
 }
 
  .projectsItem {
-    border: 1px solid red;
-    border-radius: 16px;
-    height: 20vw;
-    width: 20vw;
+    border-radius: 6px;
+    height: auto;
+    width: 40vw;
     margin: auto;
-    box-shadow: 0 0 8px whitesmoke;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
 } 
+
+.projectImg {
+    box-shadow: 0 0 10px whitesmoke;
+}
+
+.buttonLinks a {
+    font-size: 26px;
+    padding: 20px;
+    color: whitesmoke;
+}
+
+.buttonLinks a:hover {
+    color: var(--globalColor);
+    transition: 0.2s;
+}
 
 @media (max-width:1281px) {
     .projects {
         grid-template-columns: 1fr 1fr;
-        width: 100vw;
+        width: 90vw;
         margin: 100px auto;
-        gap: 5vw;
+        gap: 3vw;
     }
 
     .projectsItem {
-        border: 1px solid red;
-        border-radius: 16px;
-        height: 30vw;
-        width: 30vw;
+        /* height: 42vw; */
+        width: 42vw;
         margin: auto;
     } 
 }
 
 @media (max-width:961px) {
     .projects {
-        grid-template-columns: 1fr 1fr;
-        width: 90vw;
+        grid-template-columns: 1fr;
+        width: 95vw;
         margin: 100px auto;
-        gap: 5vw;
+        gap: 1vw;
     }
 
     .projectsItem {
-        border: 1px solid red;
-        border-radius: 16px;
-        height: 37vw;
-        width: 37vw;
+        /* height: 80vw; */
+        width: 80vw;
         margin: auto;
     } 
 }
 
 @media (max-width: 796px) {
     .projects {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         width: 90vw;
         margin: 100px auto;
-        gap: 5vw;
+        gap: 1vw;
     }
 
     .projectsItem {
-        border: 1px solid red;
-        border-radius: 16px;
-        height: 40vw;
-        width: 40vw;
+        /* height: 85vw; */
+        width: 85vw;
         margin: auto;
     } 
 
@@ -72,16 +85,31 @@
 @media (max-width: 480px) {
     .projects {
         grid-template-columns: 1fr;
-        width: 80vw;
+        width: 90vw;
         margin: 100px auto;
-        gap: 5vw;
+        gap: 0vw;
     }
 
     .projectsItem {
-        border: 1px solid red;
-        border-radius: 16px;
-        height: 70vw;
-        width: 70vw;
+        /* height: 80vw; */
+        width: 80vw;
         margin: auto;
     } 
+}
+
+.projectsItem {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.projectImg {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.buttonLinks {
+    padding: 20px;
 }
