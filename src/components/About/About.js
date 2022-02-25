@@ -36,7 +36,7 @@ const About = () => {
                 <Carousel
                     data={data}
                     time={4000}
-                    radius="100px"
+                    radius="30px"
                     slideNumber={false}
                     captionPosition="bottom"
                     automatic={true}
