@@ -30,6 +30,7 @@
 
 .aboutMe {
     text-decoration: underline;
+    text-underline-offset: 7px;
 }
 
 @media (max-width: 769px) {
