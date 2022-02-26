@@ -12,6 +12,7 @@ body {
     text-align: center;
     justify-content: center;
     text-decoration: underline;
+    text-underline-offset: 10px;
 }
 
 .projectsHeader {
