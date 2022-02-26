@@ -12,7 +12,7 @@
 }
 
  .projectsItem {
-    border-radius: 6px;
+    border-radius: 10px;
     height: auto;
     width: 40vw;
     margin: auto;
@@ -22,7 +22,8 @@
 } 
 
 .projectImg {
-    box-shadow: 0 0 10px whitesmoke;
+    box-shadow: 0 0 50px whitesmoke;
+    border-radius: 10px;
 }
 
 .buttonLinks a {
@@ -70,7 +71,7 @@
     .projects {
         grid-template-columns: 1fr;
         width: 90vw;
-        margin: 100px auto;
+        margin: 80px auto;
         gap: 1vw;
     }
 
@@ -86,7 +87,7 @@
     .projects {
         grid-template-columns: 1fr;
         width: 90vw;
-        margin: 100px auto;
+        margin: 50px auto;
         gap: 0vw;
     }
 

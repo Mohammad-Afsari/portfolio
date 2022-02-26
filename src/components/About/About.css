@@ -28,6 +28,10 @@
     color: var(--introDetailsHighlight);
 }
 
+.aboutMe {
+    text-decoration: underline;
+}
+
 @media (max-width: 769px) {
     .about {
         grid-template-columns: 1fr;
@@ -60,4 +64,8 @@
     .aboutMe {
         font-size: 18px;
     }
+}
+
+html {
+    scroll-behavior: smooth;
 }

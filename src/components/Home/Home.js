@@ -31,7 +31,7 @@ const Home = () => {
       }, [])
 
     return (
-        <div className="container section" data-aos="fade-up">
+        <section className="container section" data-aos="fade-up" id="home">
             <div className="intro">
               <div className='welcome'>
                 <h1>Hi,</h1>
@@ -45,15 +45,15 @@ const Home = () => {
                 </h2>
                 <section className='links'>
                   <p><a href="#mail"><MdEmail className='link-item'/></a></p>
-                  <p><a href="github"><SiGithub className='link-item' /></a></p>
-                  <p><a href="linkedin"><SiLinkedin className='link-item'/></a></p>
+                  <p><a href="https://github.com/Mohammad-Afsari"><SiGithub className='link-item' /></a></p>
+                  <p><a href="https://www.linkedin.com/in/mohammad-afsari-77432b7b/"><SiLinkedin className='link-item'/></a></p>
                 </section>
               </div>
             </div>
             <div className='pictureContainer'>
               <img className='profilePic' src={profilePicCroppedHD} alt="" />
             </div>
-        </div>
+        </section>
         );
     };
     
