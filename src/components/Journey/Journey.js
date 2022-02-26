@@ -14,7 +14,7 @@ const About = () => {
         aos.init({duration: 2200});
     }, [])
     return ( 
-        <div className="journey" data-aos="fade-up">
+        <section className="journey" data-aos="fade-up">
             <VerticalTimeline lineColor={ 'rgb(42, 138, 248)' }>
 
                 {/* Start */}
@@ -103,7 +103,7 @@ const About = () => {
                     </p>
                 </VerticalTimelineElement>
             </VerticalTimeline>
-        </div>
+        </section>
      );
 }
  

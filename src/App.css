@@ -6,3 +6,16 @@ body {
     font-family: 'Encode Sans', sans-serif;
     background-color: rgb(1, 1, 20);
 }
+
+.pageHeader {
+    color: whitesmoke;
+    text-align: center;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.projectsHeader {
+    margin-top: 100px;
+}
+
+

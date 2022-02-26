@@ -1,0 +1,41 @@
+:root {
+    --fontColor: whitesmoke;
+}
+
+.skillsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: var(--fontColor);
+    width: 90vw;
+    margin: 50px auto;
+    gap: 30px;
+}
+
+.skillsContainer section h2 {
+    color: rgb(42, 138, 248);
+}
+
+.skillItem {
+    height: 40px;
+    border: 1px solid whitesmoke;
+    margin:auto;
+    margin: 30px auto;
+    background-color: rgb(4, 36, 73);
+    box-shadow: 0 0 8px whitesmoke;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 14px;
+}
+
+.skillItem span {
+    padding-left: 10px;
+}
+
+
+@media (max-width: 769px) {
+    .skillsContainer {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+}

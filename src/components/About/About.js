@@ -30,7 +30,7 @@ const About = () => {
 
 
     return ( 
-        <div className="about" data-aos="fade-up">
+        <section className="about" data-aos="fade-up" >
             <div className='aboutPhotos'>
                 <div>
                 <Carousel
@@ -65,7 +65,7 @@ const About = () => {
                     Currently, I am further developing and learning the <span>MERN</span> stack to hopefully build <span>full stack web applications</span> by the end of the year as well as <span>freelancing</span> in my own time.
                 </article>
             </div>
-        </div>
+        </section>
      );
 }
  
