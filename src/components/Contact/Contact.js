@@ -23,7 +23,16 @@ const Contact = () => {
             console.log(error.text);
         });
 
-    e.target.reset();
+        // Get the snackbar DIV
+        const messageElement = document.getElementById("userMessage");
+      
+        // Add the "show" class to DIV
+        messageElement.className = "show";
+      
+        // After 3 seconds, remove the show class from DIV
+        setTimeout(function(){ messageElement.className = messageElement.className.replace("show", ""); }, 3000);
+
+        e.target.reset();
     };
 
     return ( 
@@ -50,8 +59,9 @@ const Contact = () => {
                     <button type='submit' className='submitBtn'>Send</button>
                 </form>
             </section>
+            <div id="userMessage">Message sent!</div>
         </div>
      );
 }
-// AIzaSyDl8_zl_A18LTX1mQbUFbf7Mn8KfZE82Mc
+
 export default Contact;
