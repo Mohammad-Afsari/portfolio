@@ -131,11 +131,19 @@
 
     .cv {
         width: 60vw;
-        font-size: 19px;
+        font-size: 18px;
     }
 
     .location {
-        font-size: 15px;
+        font-size: 16px;
+    }
+
+    .message p {
+        font-size: 16px;
+    }
+
+    .locationMessage p {
+        font-size: 16px;
     }
 
     .contact {
@@ -153,11 +161,41 @@
 
     .cv {
         width: 80vw;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .location {
         font-size: 14px;
+    }
+
+    .contact {
+        grid-template-columns: 1fr;
+        width: 90vw;
+        margin: 80px auto;
+        gap: 50px;
+    }
+}
+
+@media (max-width: 280px) {
+    .contactInfo {
+        width: 90vw;
+    }
+
+    .cv {
+        width: 80vw;
+        font-size: 14px;
+    }
+
+    .location {
+        font-size: 12px;
+    }
+
+    .message p {
+        font-size: 12px;
+    }
+
+    .locationMessage p {
+        font-size: 12px;
     }
 
     .contact {
