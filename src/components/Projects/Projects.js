@@ -44,8 +44,8 @@ const Projects = () => {
         {
             "id": 6,
             "image": "https://github.com/Mohammad-Afsari/portfolio/blob/master/src/components/imgs/d-lish.png?raw=true",
-            "githubLink":  "https://github.com/Mohammad-Afsari/restaurant_page",
-            "liveLink": "https://mohammad-afsari.github.io/restaurant_page/#home"
+            "githubLink":  "https://github.com/Mohammad-Afsari/microblog",
+            "liveLink": "https://github.com/Mohammad-Afsari/microblog"
         }
     ]
 
