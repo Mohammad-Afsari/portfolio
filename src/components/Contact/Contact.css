@@ -59,7 +59,7 @@
     border: 1px solid var(--generalColor);
     color: var(--generalColor);
     height: 45px;
-    font-size: 18px;
+    font-size: 16px;
     padding-left: 10px;
     display: flex;
     align-items: center;
@@ -135,7 +135,7 @@
     }
 
     .location {
-        font-size: 19px;
+        font-size: 15px;
     }
 
     .contact {
@@ -157,7 +157,7 @@
     }
 
     .location {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .contact {

@@ -9,6 +9,7 @@ import aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
         <div id="contact"></div>
         <h1 className="pageHeader" data-aos="fade-up">Contact</h1>
         <Contact />
+        <Footer />
     </div>
   );
 }
