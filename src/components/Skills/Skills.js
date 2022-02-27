@@ -23,7 +23,7 @@ import { useEffect } from 'react';
 
 const Skills = () => {
     useEffect(() => {
-        aos.init({duration: 2200});
+        aos.init({duration: 3000});
       }, [])
 
     return ( 
