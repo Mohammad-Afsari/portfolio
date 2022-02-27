@@ -1,0 +1,70 @@
+:root {
+    --theme: rgb(42, 138, 248);
+    --generalColor: whitesmoke;
+    --footerBorder: rgb(4, 36, 73);
+}
+
+
+.footer {
+    height: 30vh;
+    border-top: 3px solid var(--footerBorder);
+    width: 98vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: var(--generalColor);
+    margin: 0 auto;
+}
+
+.footerDetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 180px;
+}
+
+.footerName {
+    font-size: 16px;
+    height: 0px;
+}
+
+.footerName span {
+    color: var(--theme);
+}
+
+
+
+.contactHoursContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px;
+    padding-bottom: 80px;
+}
+
+.contactHours h2 {
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.contactHours p {
+    font-size: 12px;
+}
+
+.contactHours p span {
+    color: var(--theme);
+    font-weight: bolder;
+}
+
+@media (max-width: 480px) {
+    .footer {
+        width: 98vw;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .footerDetails {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 30px;
+    }
+}
