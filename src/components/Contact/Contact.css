@@ -93,6 +93,8 @@
     box-shadow: 0 0 2px var(--generalColor);
     background-color: rgb(4, 36, 73);
     color: var(--generalColor);
+    font-weight: bolder;
+    font-size: 15px;
 }
 
 .contactForm textarea {
@@ -101,6 +103,8 @@
     box-shadow: 0 0 2px var(--generalColor);
     background-color: rgb(4, 36, 73);
     color: var(--generalColor);
+    font-weight: bolder;
+    font-size: 15px;
 }
 
 .contactForm button {
