@@ -63,11 +63,11 @@ const Projects = () => {
                         <article className="projectsItem" data-aos="fade-up" key={id}>
                             <p className='projectDescription'>{description}</p>
                             <div className="imgContainer">
-                                <a href={liveLink}><img src={image} alt="" className="projectImg" /></a>
+                                <a href={liveLink} target="_blank" rel="noreferrer"><img src={image} alt="" className="projectImg"/></a>
                             </div>
                             <div className="buttonLinks">
-                                <a href={githubLink}><SiGithub /></a>
-                                <a href={liveLink}><FiExternalLink /></a>
+                                <a href={githubLink} target="_blank" rel="noreferrer"><SiGithub /></a>
+                                <a href={liveLink} target="_blank" rel="noreferrer"><FiExternalLink /></a>
                             </div>
                         </article>
                     )
