@@ -45,8 +45,8 @@ const Home = () => {
                 </h2>
                 <section className='links'>
                   <p><a href="#contact"><MdEmail className='link-item'/></a></p>
-                  <p><a href="https://github.com/Mohammad-Afsari"><SiGithub className='link-item' /></a></p>
-                  <p><a href="https://www.linkedin.com/in/mohammad-afsari-77432b7b/"><SiLinkedin className='link-item'/></a></p>
+                  <p><a href="https://github.com/Mohammad-Afsari" target="_blank" rel="noreferrer"><SiGithub className='link-item' /></a></p>
+                  <p><a href="https://www.linkedin.com/in/mohammad-afsari-77432b7b/" target="_blank" rel="noreferrer"><SiLinkedin className='link-item'/></a></p>
                 </section>
               </div>
             </div>
