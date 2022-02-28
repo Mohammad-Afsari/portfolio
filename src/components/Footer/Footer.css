@@ -19,11 +19,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 180px;
+    padding-bottom: 200px;
 }
 
 .footerName {
-    font-size: 16px;
+    font-size: 14px;
     height: 0px;
 }
 
