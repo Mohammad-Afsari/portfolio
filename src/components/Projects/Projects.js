@@ -16,7 +16,7 @@ const Projects = () => {
             "image": "https://github.com/Mohammad-Afsari/portfolio/blob/master/src/components/imgs/d-lish.png?raw=true",
             "githubLink":  "https://github.com/Mohammad-Afsari/restaurant_page",
             "liveLink": "https://mohammad-afsari.github.io/restaurant_page/#home",
-            "description": "A resturant page showcasing authentic, affordable and d-lish food!"
+            "description": "D-Lish resturant - affordable, authentic healthy food!"
         },
         {
             "id": 2,
@@ -37,7 +37,7 @@ const Projects = () => {
             "image": "https://github.com/Mohammad-Afsari/portfolio/blob/master/src/components/imgs/library.PNG?raw=true",
             "githubLink":  "https://github.com/Mohammad-Afsari/library",
             "liveLink": "https://mohammad-afsari.github.io/library/",
-            "description": "A library to save all your interested books!"
+            "description": "A library to store and keep track of all your favourite books!"
         },
         {
             "id": 5,
