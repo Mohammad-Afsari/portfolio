@@ -128,6 +128,10 @@
     transition: 0.3s;
 }
 
+.submitBtn {
+    cursor: pointer;
+}
+
 @media (max-width: 769px) {
     .contactInfo {
         width: 90vw;
