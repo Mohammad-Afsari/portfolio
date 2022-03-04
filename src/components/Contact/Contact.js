@@ -41,7 +41,7 @@ const Contact = () => {
                 <div className="locationMessage">
                     <p>For more detailed information, please feel free to download my resume below.</p>
                 </div>
-                <div className="cv"><a href={CV} download>Download Resume</a></div>
+                <div className="cv"><a href={CV} download>Download CV</a></div>
                 <div className="locationMessage">
                     <p>Based in:</p>
                 </div>
@@ -49,7 +49,7 @@ const Contact = () => {
             </section>
             <section className="formContainer" data-aos="fade-up">
                 <div className="message">
-                    <p>For <span>freelance</span> projects, <span>job</span> opportunities or if you wish to just have a <span>general chat,</span> please feel free to get in touch by filling out the <span>form</span> below. You can also reach out to me on <span>LinkedIn</span>, <span>email</span> or by <span>phone</span> (details held in my resume).</p>
+                    <p>For <span>freelance</span> projects, <span>job</span> opportunities or if you wish to just have a <span>general chat,</span> please feel free to get in touch by filling out the <span>form</span> below. You can also reach out to me on <span>LinkedIn</span>, <span>email</span> or by <span>phone</span> (details held in my CV).</p>
                 </div>
                 <form className='contactForm' ref={form} onSubmit={sendEmail}>
                     <input type="text" placeholder='Your Full Name' name='name' required></input>
