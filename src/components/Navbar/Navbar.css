@@ -1,36 +1,36 @@
 .nav-container {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 2rem;
-    left: 50%;
-    transform: translate(-50%);
-    z-index: 5;
-    border: 2px solid rgba(2, 2, 2, 0.7);
-    background: rgba(138, 115, 115, 0.2);
-    border-radius: 50px;
-    box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
-    gap: 0.2rem;
-    backdrop-filter: blur(20px);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 2rem;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 5;
+  border: 2px solid rgba(2, 2, 2, 0.7);
+  background: rgba(138, 115, 115, 0.2);
+  border-radius: 50px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  gap: 0.2rem;
+  backdrop-filter: blur(20px);
 }
 
 #menuItem {
-    color: rgb(42, 138, 248);
-    gap: 0.2rem;
-    display: flex;
-    padding: 0.7rem;
-    text-decoration: none;
-    font-size: 1.4rem;
-    border-radius: 50%;
+  color: rgb(42, 138, 248);
+  gap: 0.2rem;
+  display: flex;
+  padding: 0.7rem;
+  text-decoration: none;
+  font-size: 1.4rem;
+  border-radius: 50%;
 }
 
 #menuItem:hover {
-    color: whitesmoke;
-    background: rgba(0,0,0,0.4);
+  color: whitesmoke;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 nav a.active {
-    background: rgba(71, 71, 71, 0.4);
-    color: whitesmoke !important;
+  background: rgba(71, 71, 71, 0.4);
+  color: whitesmoke !important;
 }
