@@ -1,22 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@700&family=Fuzzy+Bubbles:wght@700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@700&family=Fuzzy+Bubbles:wght@700&display=swap");
 
 body {
-    margin: auto;
-    font-family: 'Encode Sans', sans-serif;
-    background-color: rgb(1, 1, 20);
+  margin: auto;
+  font-family: "Encode Sans", sans-serif;
+  background-color: rgb(1, 1, 20);
 }
 
 .pageHeader {
-    color: whitesmoke;
-    text-align: center;
-    justify-content: center;
-    text-decoration: underline;
-    text-underline-offset: 10px;
+  color: whitesmoke;
+  text-align: center;
+  justify-content: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
 }
 
 .projectsHeader {
-    margin-top: 100px;
+  margin-top: 100px;
 }
-
-
