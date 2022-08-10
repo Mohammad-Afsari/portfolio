@@ -2,7 +2,6 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
 import Journey from "./components/Journey/Journey";
-import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
 import aos from "aos";
@@ -22,7 +21,6 @@ function App() {
       <Navbar />
       <Home />
       <div id="about"></div>
-      {/* <About /> */}
       <h1 className="pageHeader journeyHeader" data-aos="fade-up">
         About Me
       </h1>
