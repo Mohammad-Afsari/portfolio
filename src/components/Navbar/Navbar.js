@@ -28,9 +28,9 @@ const Navbar = () => {
       setActiveNav("#journey");
     } else if ((scrollPosition >= 2400) & (scrollPosition < 4000)) {
       setActiveNav("#projects");
-    } else if ((scrollPosition >= 4000) & (scrollPosition < 5200)) {
+    } else if ((scrollPosition >= 4000) & (scrollPosition < 5400)) {
       setActiveNav("#skills");
-    } else if ((scrollPosition >= 5200) & (scrollPosition < 7000)) {
+    } else if ((scrollPosition >= 5400) & (scrollPosition < 7000)) {
       setActiveNav("#contact");
     }
   };

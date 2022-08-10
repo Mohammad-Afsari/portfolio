@@ -23,7 +23,7 @@ const Projects = () => {
     {
       id: 2,
       image:
-        "https://github.com/Mohammad-Afsari/portfolio/blob/master/src/components/imgs/mdtanalytics.PNG?raw=true",
+        "https://github.com/Mohammad-Afsari/portfolio/blob/master/src/components/imgs/mdtanalytics.png?raw=true",
       githubLink: "https://github.com/Mohammad-Afsari/mdtanalytics",
       liveLink: "https://mdtanalytics.netlify.app/",
       description: "MDT Analaytics Ltd. landing page.",
