@@ -52,7 +52,7 @@ const Skills = () => {
         </div>
 
         <div className="front-end skillItem" data-aos="fade-up">
-          <SiReact /> <span>React (Incl. Hooks)</span>
+          <SiReact /> <span>React (Hooks, zustand, react-query)</span>
         </div>
       </section>
       <section className="back-end" data-aos="fade-up">
