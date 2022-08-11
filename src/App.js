@@ -6,41 +6,92 @@ import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
 import aos from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Introduction from "./components/Introduction/Introduction";
+import { useScroll } from "./store/useScroll";
 
 function App() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  // Global state
+  const { setHomeScroll } = useScroll();
+  const { setAboutScroll } = useScroll();
+  const { setJourneyScroll } = useScroll();
+  const { setProjectsScroll } = useScroll();
+  const { setSkillsScroll } = useScroll();
+  const { setContactScroll } = useScroll();
+
+  // Local state
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const journeyRef = useRef(null);
+  const projectsRef = useRef(null);
+  const skillsRef = useRef(null);
+  const contactRef = useRef(null);
+  const [navload, setNavload] = useState(false);
+
   useEffect(() => {
     aos.init({ duration: 2200 });
   }, []);
 
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+
+    setHomeScroll(homeRef.current.offsetTop);
+    setAboutScroll(aboutRef.current.offsetTop);
+    setJourneyScroll(journeyRef.current.offsetTop);
+    setProjectsScroll(projectsRef.current.offsetTop);
+    setSkillsScroll(skillsRef.current.offsetTop);
+    setContactScroll(contactRef.current.offsetTop);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrollPosition]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    navbarLoad();
+  }, []);
+
+  const navbarLoad = () => {
+    setTimeout(() => {
+      setNavload(true);
+    }, 500);
+  };
+
   return (
     <div className="App">
-      <Navbar />
+      {navload && <Navbar />}
+      <div ref={homeRef}></div>
       <Home />
-      <div id="about"></div>
+      <div id="about" ref={aboutRef}></div>
       <h1 className="pageHeader journeyHeader" data-aos="fade-up">
         About Me
       </h1>
       <Introduction />
-      <div id="journey"></div>
+      <div id="journey" ref={journeyRef}></div>
       <h1 className="pageHeader journeyHeader" data-aos="fade-up">
         The Journey so far...
       </h1>
       <Journey />
-      <div id="projects"></div>
+      <div id="projects" ref={projectsRef}></div>
       <h1 className="pageHeader projectsHeader" data-aos="fade-up">
         Projects
       </h1>
       <Projects />
-      <div id="skills"></div>
+      <div id="skills" ref={skillsRef}></div>
       <h1 className="pageHeader" data-aos="fade-up">
         Skill Stack
       </h1>
       <Skills />
-      <div id="contact"></div>
+      <div id="contact" ref={contactRef}></div>
       <h1 className="pageHeader" data-aos="fade-up">
         Contact
       </h1>

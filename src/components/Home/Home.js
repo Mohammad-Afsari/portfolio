@@ -1,7 +1,7 @@
 import "./Home.css";
 import React, { useEffect, useState } from "react";
 import TextTransition, { presets } from "react-text-transition";
-import profilePicCroppedHD from "../imgs/profilePicCroppedHD.jpg";
+import profilePicCroppedHD from "../imgs/profilePicCroppedHD-min.jpg";
 import { SiGithub } from "react-icons/si";
 import { SiLinkedin } from "react-icons/si";
 import { MdEmail } from "react-icons/md";

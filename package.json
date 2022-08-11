@@ -26,7 +26,8 @@
     "react-vertical-timeline-component": "^3.5.2",
     "slick-carousel": "^1.8.1",
     "underscore": "^1.13.2",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "zustand": "^4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
