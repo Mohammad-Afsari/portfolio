@@ -105,7 +105,7 @@ const Projects = () => {
                     <div className="text overlayContainer">
                       <div className="overlayTitle">{title}</div>
                       <div>{description}</div>
-                      <div>
+                      <div className="overlayTech">
                         <span>Built using:</span>
                         <p>{technologies}</p>
                       </div>
