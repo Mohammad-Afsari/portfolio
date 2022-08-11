@@ -5,7 +5,7 @@
   align-items: center;
   bottom: 2rem;
   left: 50%;
-  transform: translate(-50%);
+  transform: translate(-50%) !important;
   z-index: 5;
   border: 2px solid rgba(2, 2, 2, 0.7);
   background: rgba(138, 115, 115, 0.2);

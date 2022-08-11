@@ -63,8 +63,7 @@ const Introduction = () => {
             <section>
               I was selected for the final 30 squad football players to
               represent Nike Academy in 2012. Football has been in my DNA since
-              young and is still a big part of my life - current team Camden and
-              Islington United FC.
+              young and is still a big part of my life!
             </section>
           </div>
         </div>

@@ -17,3 +17,7 @@ body {
 .projectsHeader {
   margin-top: 100px;
 }
+
+html {
+  scroll-behavior: smooth;
+}
