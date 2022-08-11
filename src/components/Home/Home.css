@@ -1,57 +1,57 @@
 :root {
-    --textTransition: rgb(42, 138, 248);
+  --textTransition: rgb(42, 138, 248);
 }
 
 /* Parent Overall Container */
 .section {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    margin: auto 10%;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: auto 10%;
 }
 
 /* Intro Container */
 .intro {
-    margin: auto;
-    color: white;
+  margin: auto;
+  color: white;
 }
 
 .intro h1 {
-    font-size: 2.8rem;
+  font-size: 2.8rem;
 }
 
 .intro p {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .intro h2 {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 }
 
 /* Picture Container */
 .pictureContainer {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .profilePic {
-    z-index: 2;
-    height: 30vw;
-    border-radius: 50%;
-    border: 2px solid var(--textTransition);
-    box-shadow: 0 0 15px whitesmoke;
+  z-index: 2;
+  height: 30vw;
+  border-radius: 50%;
+  border: 2px solid var(--textTransition);
+  box-shadow: 0 0 15px whitesmoke;
 }
 
 .transition-text {
-    color: var(--textTransition);
+  color: var(--textTransition);
 }
 
 .link-item {
-    color: whitesmoke;
+  color: whitesmoke;
 }
 
 .link-item:hover {
-    color: var(--textTransition);
+  color: var(--textTransition);
 }
 
 /* ================
@@ -60,159 +60,159 @@ Responsiveness
 
 /* Desktop */
 /* intro h1, intro p, intro h2 */
-@media (max-width:1281px) {
-    .intro h1 {
-        font-size: 2.8rem;
-    }
+@media (max-width: 1281px) {
+  .intro h1 {
+    font-size: 2.8rem;
+  }
 
-    .intro p {
-        font-size: 1.7rem;
-    }
+  .intro p {
+    font-size: 1.7rem;
+  }
 
-    .intro h2 {
-        font-size: 1.5rem;
-    }
+  .intro h2 {
+    font-size: 1.5rem;
+  }
 
-    .profilePic {
-        height: 32vw;
-    }
+  .profilePic {
+    height: 32vw;
+  }
 }
 
 /* Smaller Desktop */
-@media (max-width:961px) {
-    .intro h1 {
-        font-size: 2.6rem;
-    }
+@media (max-width: 961px) {
+  .intro h1 {
+    font-size: 2.6rem;
+  }
 
-    .intro p {
-        font-size: 1.6rem;
-    }
+  .intro p {
+    font-size: 1.6rem;
+  }
 
-    .intro h2 {
-        font-size: 1.4rem;
-    }
+  .intro h2 {
+    font-size: 1.4rem;
+  }
 
-    .profilePic {
-        height: 35vw;
-    }
+  .profilePic {
+    height: 35vw;
+  }
 }
 
 /* Small laptop / tablets Desktop */
-@media (max-width:769px) {
-    .section {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        margin: 0 auto;
-    }
+@media (max-width: 769px) {
+  .section {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 auto;
+  }
 
-    .links {
-        display: flex;
-    }
+  .links {
+    display: flex;
+  }
 
-    .links p {
-        padding-right: 5%;
-    }
+  .links p {
+    padding-right: 5%;
+  }
 
-    .intro h1 {
-        font-size: 2.8rem;
-    }
+  .intro h1 {
+    font-size: 2.8rem;
+  }
 
-    .intro p {
-        font-size: 1.8rem;
-    }
+  .intro p {
+    font-size: 1.8rem;
+  }
 
-    .intro h2 {
-        font-size: 1.6rem;
-    }
+  .intro h2 {
+    font-size: 1.6rem;
+  }
 
-    .pictureContainer {
-        padding: 0 0 20vh 0;
-    }
+  .pictureContainer {
+    padding: 0 0 20vh 0;
+  }
 
-    .profilePic {
-        height: 45vw;
-    }
+  .profilePic {
+    height: 45vw;
+  }
 }
 
 /* Tablets */
-@media (max-width:600px) {
-    .section {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        margin: 0 auto;
-    }
+@media (max-width: 600px) {
+  .section {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 auto;
+  }
 
-    .links {
-        display: flex;
-    }
+  .links {
+    display: flex;
+  }
 
-    .links p {
-        padding-right: 5%;
-    }
+  .links p {
+    padding-right: 5%;
+  }
 
-    .intro h1 {
-        font-size: 3rem;
-    }
+  .intro h1 {
+    font-size: 3rem;
+  }
 
-    .intro p {
-        font-size: 2rem;
-    }
+  .intro p {
+    font-size: 2rem;
+  }
 
-    .intro h2 {
-        font-size: 1.8rem;
-    }
+  .intro h2 {
+    font-size: 1.8rem;
+  }
 
-    .pictureContainer {
-        padding: 0 0 20vh 0;
-    }
+  .pictureContainer {
+    padding: 0 0 20vh 0;
+  }
 
-    .profilePic {
-        height: 60vw;
-    }
+  .profilePic {
+    height: 60vw;
+  }
 }
 
 /* Smaller Tablets */
-@media (max-width:480px) {
-    .intro h1 {
-        font-size: 2.6rem;
-    }
+@media (max-width: 480px) {
+  .intro h1 {
+    font-size: 2.6rem;
+  }
 
-    .intro p {
-        font-size: 1.7rem;
-    }
+  .intro p {
+    font-size: 1.7rem;
+  }
 
-    .intro h2 {
-        font-size: 1.5rem;
-    }
+  .intro h2 {
+    font-size: 1.5rem;
+  }
 
-    .pictureContainer {
-        padding: 0 0 20vh 0;
-    }
+  .pictureContainer {
+    padding: 0 0 20vh 0;
+  }
 
-    .profilePic {
-        height: 65vw;
-    }
+  .profilePic {
+    height: 65vw;
+  }
 }
 
 /* Smaller Tablets */
-@media (max-width:320px) {    
-    .intro h1 {
-        font-size: 2.2rem;
-    }
+@media (max-width: 320px) {
+  .intro h1 {
+    font-size: 2.2rem;
+  }
 
-    .intro p {
-        font-size: 1.2rem;
-    }
+  .intro p {
+    font-size: 1.2rem;
+  }
 
-    .intro h2 {
-        font-size: 1rem;
-    }
+  .intro h2 {
+    font-size: 1rem;
+  }
 
-    .pictureContainer {
-        padding: 0 0 30vh 0;
-    }
+  .pictureContainer {
+    padding: 0 0 30vh 0;
+  }
 
-    .profilePic {
-        height: 80vw;
-    }
+  .profilePic {
+    height: 80vw;
+  }
 }
