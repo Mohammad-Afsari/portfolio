@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { SiGithub } from "react-icons/si";
 import { FiExternalLink } from "react-icons/fi";
+import Image from "../imgs/profilePicCroppedHD-min.jpg";
 
 const Projects = () => {
   useEffect(() => {
@@ -17,8 +18,11 @@ const Projects = () => {
         "https://github.com/Mohammad-Afsari/portfolio/blob/master/src/components/imgs/strife.png?raw=true",
       githubLink: "https://github.com/Mohammad-Afsari/chatroomz",
       liveLink: "https://strifechatrooms.netlify.app/",
+      title: "Strife - chatroom service",
       description:
-        "Strife - A chatroom service where talking to people has been made easy.",
+        "A chatroom service where talking to people has been made easy - a full stack application built using supabase.",
+      technologies:
+        "React, Typescript, Supabase, MaterialUI, Postgresql, Zustand and react-query.",
     },
     {
       id: 2,
@@ -26,7 +30,9 @@ const Projects = () => {
         "https://github.com/Mohammad-Afsari/portfolio/blob/master/src/components/imgs/mdtanalytics.png?raw=true",
       githubLink: "https://github.com/Mohammad-Afsari/mdtanalytics",
       liveLink: "https://mdtanalytics.netlify.app/",
-      description: "MDT Analaytics Ltd. landing page.",
+      title: "MDT Analaytics landing page",
+      description: "A landing page created for a analytics consultancy.",
+      technologies: "React, Javascript, CSS3, figma.",
     },
     {
       id: 3,
@@ -34,7 +40,9 @@ const Projects = () => {
         "https://github.com/Mohammad-Afsari/portfolio/blob/master/src/components/imgs/microblog.png?raw=true",
       githubLink: "https://github.com/Mohammad-Afsari/microblog",
       liveLink: "https://github.com/Mohammad-Afsari/microblog",
-      description: "Micro blog page built in React using JSON server.",
+      title: "Micro blog page",
+      description: "A Micro blog page created to save your favourite blogs!",
+      technologies: "React, Javascript, JSON server, CSS3.",
     },
     {
       id: 4,
@@ -42,8 +50,9 @@ const Projects = () => {
         "https://github.com/Mohammad-Afsari/portfolio/blob/master/src/components/imgs/organise.PNG?raw=true",
       githubLink: "https://github.com/Mohammad-Afsari/todo_list",
       liveLink: "https://mohammad-afsari.github.io/todo_list/#!",
-      description:
-        "Organise app built using vanilla JavaScript saved to local storage.",
+      title: "Organise app",
+      description: "An organisation app built to store your tasks and notes.",
+      technologies: "HTML5, CSS3, Javascript, local storage.",
     },
     {
       id: 5,
@@ -51,7 +60,10 @@ const Projects = () => {
         "https://github.com/Mohammad-Afsari/portfolio/blob/master/src/components/imgs/d-lish.png?raw=true",
       githubLink: "https://github.com/Mohammad-Afsari/restaurant_page",
       liveLink: "https://mohammad-afsari.github.io/restaurant_page/#home",
-      description: "D-Lish resturant - affordable, authentic healthy food!",
+      title: "D-Lish resturant landing page",
+      description:
+        "A landing page for a fictional resturant page showcasing affordable, authentic healthy food!",
+      technologies: "HTML5, CSS3, JavaScript, ES5/ES6.",
     },
     {
       id: 6,
@@ -59,21 +71,47 @@ const Projects = () => {
         "https://github.com/Mohammad-Afsari/portfolio/blob/master/src/components/imgs/weatherapp.PNG?raw=true",
       githubLink: "https://github.com/Mohammad-Afsari/weather_application",
       liveLink: "https://mohammad-afsari.github.io/weather_application/",
+      title: "Weather application",
       description: "Weather application using the OpenWeather API.",
+      technologies: "HTML5, CSS3, Javascript, weatherAPI.",
     },
   ];
 
   return (
     <div className="projects">
       {associatedProjects.map(
-        ({ id, image, githubLink, liveLink, description }) => {
+        ({
+          id,
+          image,
+          githubLink,
+          liveLink,
+          title,
+          description,
+          technologies,
+        }) => {
           return (
             <article className="projectsItem" data-aos="fade-up" key={id}>
-              <p className="projectDescription">{description}</p>
-              <div className="imgContainer">
-                <a href={liveLink} target="_blank" rel="noreferrer">
+              <p className="projectDescription">{title}</p>
+              <div className="imgContainer containerTest">
+                <div
+                  href={liveLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  alt="Avatar"
+                  className="image"
+                >
                   <img src={image} alt="" className="projectImg" />
-                </a>
+                  <div className="overlay">
+                    <div className="text overlayContainer">
+                      <div className="overlayTitle">{title}</div>
+                      <div>{description}</div>
+                      <div>
+                        <span>Built using:</span>
+                        <p>{technologies}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div className="buttonLinks">
                 <a href={githubLink} target="_blank" rel="noreferrer">
