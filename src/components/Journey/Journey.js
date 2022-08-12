@@ -98,8 +98,8 @@ const About = () => {
           <h3 className="vertical-timeline-element-title">Data Engineer</h3>
           <h4 className="vertical-timeline-element-subtitle">Cognizant</h4>
           <p>
-            Data Engineer working with European Tyre Enterprise to cleanse,
-            transform and migrate data onto Salesforce and new BI platforms.
+            Data Engineer working with European Tyre Enterprise to cleanse and
+            transform multiple datasets into Salesforce and BI platforms.
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>

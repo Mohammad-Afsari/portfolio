@@ -123,13 +123,13 @@
 
 .projectDescription {
   color: var(--globalColor);
+  font-weight: bold;
 }
 
-/*  ================================= TEST FOR PROJECT CARD =============================================  */
+/*  ================================= PROJECT CARD =============================================  */
 
 .containerTest {
   position: relative;
-  /* width: 50%; */
 }
 
 .image {
@@ -169,7 +169,8 @@
   text-align: center;
   width: 90%;
   height: 100%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .overlayContainer {
@@ -193,7 +194,7 @@
   font-weight: bold;
 }
 
-.overlayContainer div span {
+.builtUsing {
   text-decoration: underline;
   color: rgb(1, 1, 20);
   font-weight: bold;
@@ -201,6 +202,20 @@
 
 .overlayTech {
   margin: 0;
+}
+
+.techs {
+  position: absolute;
+  margin-top: 10px;
+}
+
+.techs span {
+  position: relative;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgb(22, 68, 120);
 }
 
 @media (max-width: 981px) {

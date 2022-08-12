@@ -56,11 +56,9 @@ const Contact = () => {
             CV below.
           </p>
         </div>
-        <div className="cv">
-          <a href={CV} download>
-            Download CV
-          </a>
-        </div>
+        <a href={CV} download className="cv">
+          <div>Download CV</div>
+        </a>
         <div className="locationMessage">
           <p>
             Thank you for taking the time to go through my portfolio, any
