@@ -15,9 +15,9 @@
 }
 
 /* Optional */
-.contactInfo {
+/* .contactInfo {
   width: 45vw;
-  /* background-color: rgb(23, 73, 130); */
+  background-color: rgb(23, 73, 130);
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.2),
     2px 2px 5px rgba(255, 255, 255, 0.3);
@@ -25,11 +25,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-}
+} */
 
 .locationMessage p {
   font-size: 20px;
-  padding-left: 20px;
 }
 
 .cv {
@@ -43,6 +42,9 @@
   box-shadow: 0 0 8px var(--generalColor);
   border-radius: 12px;
   border: 1px solid var(--generalColor);
+  align-items: center;
+  text-decoration: none;
+  color: whitesmoke;
 }
 
 .cv:hover {
@@ -185,7 +187,7 @@
   }
 
   .cv {
-    width: 80vw;
+    width: 70vw;
     font-size: 16px;
   }
 
@@ -207,7 +209,7 @@
   }
 
   .cv {
-    width: 80vw;
+    width: 70vw;
     font-size: 14px;
   }
 

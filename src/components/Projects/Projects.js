@@ -23,6 +23,16 @@ const Projects = () => {
         "A chatroom service where talking to people has been made easy - a full stack application built using supabase.",
       technologies:
         "React, Typescript, Supabase, MaterialUI, Postgresql, Zustand and react-query.",
+      technologiesArr: [
+        "React",
+        "Typescript",
+        "Supabase",
+        "Authentication",
+        "MaterialUI",
+        "Postgresql",
+        "Zustand",
+        "react-query",
+      ],
     },
     {
       id: 2,
@@ -30,9 +40,17 @@ const Projects = () => {
         "https://github.com/Mohammad-Afsari/portfolio/blob/master/src/components/imgs/mdtanalytics.png?raw=true",
       githubLink: "https://github.com/Mohammad-Afsari/mdtanalytics",
       liveLink: "https://mdtanalytics.netlify.app/",
-      title: "MDT Analaytics landing page",
-      description: "A landing page created for a analytics consultancy.",
-      technologies: "React, Javascript, CSS3, figma.",
+      title: "MDT Analytics landing page",
+      description: "A landing page created for an analytics consultancy.",
+      technologies: "React, Javascript, particlejs, CSS3, figma and dribbble.",
+      technologiesArr: [
+        "React",
+        "Javascript",
+        "ParticleJS",
+        "CSS3",
+        "Figma",
+        "Dribbble",
+      ],
     },
     {
       id: 3,
@@ -43,6 +61,7 @@ const Projects = () => {
       title: "Micro blog page",
       description: "A Micro blog page created to save your favourite blogs!",
       technologies: "React, Javascript, JSON server, CSS3.",
+      technologiesArr: ["React", "Javascript", "CSS3", "JSON Server"],
     },
     {
       id: 4,
@@ -53,6 +72,7 @@ const Projects = () => {
       title: "Organise app",
       description: "An organisation app built to store your tasks and notes.",
       technologies: "HTML5, CSS3, Javascript, local storage.",
+      technologiesArr: ["HTML5", "CSS3", "Javascript", "Local Storage"],
     },
     {
       id: 5,
@@ -64,6 +84,7 @@ const Projects = () => {
       description:
         "A landing page for a fictional resturant page showcasing affordable, authentic healthy food!",
       technologies: "HTML5, CSS3, JavaScript, ES5/ES6.",
+      technologiesArr: ["HTML5", "CSS3", "JavaScript", "ES5/ES6"],
     },
     {
       id: 6,
@@ -74,6 +95,7 @@ const Projects = () => {
       title: "Weather application",
       description: "Weather application using the OpenWeather API.",
       technologies: "HTML5, CSS3, Javascript, weatherAPI.",
+      technologiesArr: ["HTML5", "CSS3", "Javascript", "OpenWeatherAPI"],
     },
   ];
 
@@ -88,6 +110,7 @@ const Projects = () => {
           title,
           description,
           technologies,
+          technologiesArr,
         }) => {
           return (
             <article className="projectsItem" data-aos="fade-up" key={id}>
@@ -106,8 +129,13 @@ const Projects = () => {
                       <div className="overlayTitle">{title}</div>
                       <div>{description}</div>
                       <div className="overlayTech">
-                        <span>Built using:</span>
-                        <p>{technologies}</p>
+                        <span className="builtUsing">Built using:</span>
+                        {/* <p>{technologies}</p> */}
+                        <p className="techs">
+                          {technologiesArr.map((tech) => {
+                            return <span> {tech} </span>;
+                          })}
+                        </p>
                       </div>
                     </div>
                   </div>
