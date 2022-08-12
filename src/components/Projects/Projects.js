@@ -61,7 +61,7 @@ const Projects = () => {
       title: "Micro blog page",
       description: "A Micro blog page created to save your favourite blogs!",
       technologies: "React, Javascript, JSON server, CSS3.",
-      technologiesArr: ["React", "Javascript", "CSS3", "JSON Server"],
+      technologiesArr: ["React", "Javascript", "JSON Server", "CSS3"],
     },
     {
       id: 4,
@@ -72,7 +72,7 @@ const Projects = () => {
       title: "Organise app",
       description: "An organisation app built to store your tasks and notes.",
       technologies: "HTML5, CSS3, Javascript, local storage.",
-      technologiesArr: ["HTML5", "CSS3", "Javascript", "Local Storage"],
+      technologiesArr: ["HTML5", "Javascript", "Local Storage", "CSS3"],
     },
     {
       id: 5,
