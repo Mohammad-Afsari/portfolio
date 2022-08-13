@@ -1,5 +1,5 @@
 import "./Contact.css";
-import CV from "../Assets/Mohammad-A_CV.pdf";
+import CV from "../Assets/Mohammad-A_CV_dev.pdf";
 import aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
