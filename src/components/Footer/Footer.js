@@ -20,11 +20,6 @@ const Footer = () => {
           <p>Copyright &copy; {currentYear} M.A All Rights Reserved</p>
         </div>
       </section>
-      <section className="footerDetails">
-        <div className="footerName">
-          <span>Developed by:</span> Mohammad Afsari
-        </div>
-      </section>
     </div>
   );
 };

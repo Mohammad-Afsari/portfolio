@@ -4,7 +4,6 @@
     --footerBorder: rgb(4, 36, 73);
 }
 
-
 .footer {
     height: 30vh;
     border-top: 3px solid var(--footerBorder);
@@ -14,24 +13,6 @@
     color: var(--generalColor);
     margin: 0 auto;
 }
-
-.footerDetails {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 200px;
-}
-
-.footerName {
-    font-size: 14px;
-    height: 0px;
-}
-
-.footerName span {
-    color: var(--theme);
-}
-
-
 
 .contactHoursContainer {
     display: flex;
@@ -60,11 +41,5 @@
         width: 98vw;
         display: grid;
         grid-template-columns: 1fr;
-    }
-
-    .footerDetails {
-        display: flex;
-        justify-content: flex-start;
-        padding-left: 30px;
     }
 }

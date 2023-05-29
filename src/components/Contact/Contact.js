@@ -1,16 +1,10 @@
 import "./Contact.css";
 import CV from "../Assets/Mohammad-A_CV.pdf";
-import aos from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 
 const Contact = () => {
-  useEffect(() => {
-    aos.init({ duration: 3000 });
-  }, []);
-
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -48,7 +42,7 @@ const Contact = () => {
 
   return (
     <div className="contact">
-      <section className="contactInfo" data-aos="fade-up">
+      <section className="contactInfo">
         <div className="locationMessage">
           <p>
             For more detailed information regarding my experience, technical
@@ -66,7 +60,7 @@ const Contact = () => {
           </p>
         </div>
       </section>
-      <section className="formContainer" data-aos="fade-up">
+      <section className="formContainer">
         <div className="message">
           <p>
             For any <span>enquiries</span> please feel to get in contact by
