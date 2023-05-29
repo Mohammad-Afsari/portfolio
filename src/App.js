@@ -72,27 +72,27 @@ function App() {
       <div ref={homeRef}></div>
       <Home />
       <div id="about" ref={aboutRef}></div>
-      <h1 className="pageHeader journeyHeader" data-aos="fade-up">
+      <h1 className="pageHeader journeyHeader">
         About Me
       </h1>
       <Introduction />
       <div id="journey" ref={journeyRef}></div>
-      <h1 className="pageHeader journeyHeader" data-aos="fade-up">
+      <h1 className="pageHeader journeyHeader">
         The Journey so far...
       </h1>
       <Journey />
       <div id="projects" ref={projectsRef}></div>
-      <h1 className="pageHeader projectsHeader" data-aos="fade-up">
+      <h1 className="pageHeader projectsHeader">
         Projects
       </h1>
       <Projects />
       <div id="skills" ref={skillsRef}></div>
-      <h1 className="pageHeader" data-aos="fade-up">
+      <h1 className="pageHeader">
         Skill Stack
       </h1>
       <Skills />
       <div id="contact" ref={contactRef}></div>
-      <h1 className="pageHeader" data-aos="fade-up">
+      <h1 className="pageHeader">
         Contact
       </h1>
       <Contact />

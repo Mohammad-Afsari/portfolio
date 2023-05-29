@@ -1,16 +1,9 @@
 import "./Projects.css";
-import aos from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 import { SiGithub } from "react-icons/si";
 import { FiExternalLink } from "react-icons/fi";
-import Image from "../imgs/profilePicCroppedHD-min.jpg";
 
 const Projects = () => {
-  useEffect(() => {
-    aos.init({ duration: 2200 });
-  }, []);
-
   const associatedProjects = [
     {
       id: 1,
@@ -113,7 +106,7 @@ const Projects = () => {
           technologiesArr,
         }) => {
           return (
-            <article className="projectsItem" data-aos="fade-up" key={id}>
+            <article className="projectsItem" key={id}>
               <p className="projectDescription">{title}</p>
               <div className="imgContainer containerTest">
                 <div
