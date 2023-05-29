@@ -5,10 +5,12 @@ import profilePicCroppedHD from "../imgs/profilePicCroppedHD-min.jpg";
 import { SiGithub } from "react-icons/si";
 import { SiLinkedin } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
+import { FaFileDownload } from "react-icons/fa";
 import aos from "aos";
 import "aos/dist/aos.css";
+import CV from "../Assets/Mohammad-A_CV.pdf";
 
-const messages = ["Front End Developer", "Engineer", "Analyst"];
+const messages = ["Frontend Developer", "Engineer", "Freelancer"];
 
 const Home = () => {
   const [index, setIndex] = useState(0);
@@ -61,6 +63,16 @@ const Home = () => {
                 rel="noreferrer"
               >
                 <SiLinkedin className="link-item" />
+              </a>
+            </p>
+            <p>
+              <a
+                href={CV} 
+                download
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaFileDownload className="link-item" />
               </a>
             </p>
           </section>
