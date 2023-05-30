@@ -8,6 +8,8 @@ import { VscDebugStart } from "react-icons/vsc";
 import { MdEngineering } from "react-icons/md";
 import { GiGraduateCap } from "react-icons/gi";
 import { FaDatabase } from "react-icons/fa";
+import { FaCode } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -43,7 +45,7 @@ const About = () => {
           className="vertical-timeline-element--work"
           contentStyle={{ background: "rgb(42, 138, 248)", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  rgb(42, 138, 248)" }}
-          date="September 2017 - January 2019"
+          date="September 2017 - January 2020"
           iconStyle={{ background: "rgb(42, 138, 248)", color: "#fff" }}
           icon={<MdEngineering />}
         >
@@ -52,9 +54,7 @@ const About = () => {
             Mott MacDonald Ltd
           </h4>
           <p>
-            Graduate engineer working on retaining wall design, foundation
-            (bridges) design and tunnel settlement analysis for clients Boston
-            Barrier and High Speed 2 (HS2).
+            Responsible for developing data migration algorithms to seamlessly transfer data from Highways England's Geotechnical Database Management System (HAGDMS) to a newly implemented GDMS platform.
           </p>
         </VerticalTimelineElement>
 
@@ -65,35 +65,42 @@ const About = () => {
           contentArrowStyle={{ borderRight: "7px solid  rgb(42, 138, 248)" }}
           date="January 2019 - September 2021"
           iconStyle={{ background: "rgb(42, 138, 248)", color: "#fff" }}
-          icon={<FaDatabase />}
+          icon={<FaCode />}
         >
-          <h3 className="vertical-timeline-element-title">Data Engineer</h3>
+          <h3 className="vertical-timeline-element-title">Software Engineer</h3>
           <h4 className="vertical-timeline-element-subtitle">
             Mott MacDonald Ltd
           </h4>
           <p>
-            Digital data engineer for the rebuild and redevelopment of the
-            18-year-old existing system for clients Highways England.
-            Responsibilities included writing data migration algorithms,
-            developing PowerBI dashboards and maintaining landing page for
-            clients.
+            Developer in the reconstruction and redevelopment of an 18-year-old system for esteemed client Highways England. My responsibilities encompassed various crucial tasks such as developing reporting web pages, executing data migration, crafting PowerBI dashboards, and ensuring the seamless maintenance of the clients' landing page.
           </p>
         </VerticalTimelineElement>
-
-        {/* Cognizant - Data Analyst */}
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "rgb(42, 138, 248)", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  rgb(42, 138, 248)" }}
-          date="September 2021 - Present"
-          iconStyle={{ background: "rgb(255, 179, 39)", color: "#fff" }}
+          date="September 2021 - November 2022"
+          iconStyle={{ background: "rgb(42, 138, 248)", color: "#fff" }}
           icon={<FaDatabase />}
         >
-          <h3 className="vertical-timeline-element-title">Data Engineer</h3>
+          <h3 className="vertical-timeline-element-title">Full Stack Engineer</h3>
           <h4 className="vertical-timeline-element-subtitle">Cognizant</h4>
           <p>
-            Data Engineer working with European Tyre Enterprise to cleanse and
-            transform multiple datasets into Salesforce and BI platforms.
+            Full stack engineer working with European Tyre Enterprise to cleanse and transform diverse datasets for integration into Salesforce and BI platforms. Additionally, I developed an in-house management tool specifically tailored for wholesalers, enabling easy access to customer addresses across the United Kingdom.
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "rgb(42, 138, 248)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(42, 138, 248)" }}
+          date="November 2022 - Present"
+          iconStyle={{ background: "rgb(255, 179, 39)", color: "#fff" }}
+          icon={<FaReact />}
+        >
+          <h3 className="vertical-timeline-element-title">Frontend Developer</h3>
+          <h4 className="vertical-timeline-element-subtitle">Frasers Group</h4>
+          <p>
+            Frontend developer optimizing user experiences for renowned brands like Sports Direct, House of Fraser, USC, and Flannels. By adhering to atomic design principles, I developed and enhanced web application features while maintaining a centralised Storybook documentation for efficient collaboration and accelerated development cycles. With a strong commitment to code quality, I ensured comprehensive unit test coverage of at least 80% using modern technologies and frameworks such as React, TypeScript, GraphQL, and Jest/React Testing Library.
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>

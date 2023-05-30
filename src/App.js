@@ -78,7 +78,7 @@ function App() {
       <Introduction />
       <div id="journey" ref={journeyRef}></div>
       <h1 className="pageHeader journeyHeader">
-        The Journey so far...
+        My journey...
       </h1>
       <Journey />
       <div id="projects" ref={projectsRef}></div>
