@@ -88,7 +88,7 @@ function App() {
       <Projects />
       <div id="skills" ref={skillsRef}></div>
       <h1 className="pageHeader">
-        Skill Stack
+        Skills
       </h1>
       <Skills />
       <div id="contact" ref={contactRef}></div>
