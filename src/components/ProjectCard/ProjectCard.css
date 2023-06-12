@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+.projectCardContainer {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.projectCardWrapper {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.25);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 400px;
+    background: linear-gradient(
+        45deg,
+        rgb(0, 0, 0) -10.7%,
+        rgb(53, 92, 125) 88.8%
+    );
+    background: linear-gradient(
+        45deg,
+        rgb(15 13 13) -10.7%,
+        rgb(29 72 112) 88.8%
+    );
+    padding-top: 40px;
+    background-size: cover;
+    background-position: center;
+}
+
+.projectCardImage {
+    background-image: url(../imgs/sd-uk-2.png);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 80%;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.255);
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.projectCardWrapper h1,
+.projectCardWrapper p {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.projectCardBtnWrapper .viewMore,
+.projectCardBtnWrapper .liveSite {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 24px;
+    font-size: 12px;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.projectCardBtnWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.projectCardBtnWrapper .viewMore + .projectCardBtnWrapper .liveSite {
+    margin-left: 10px;
+}
+
+.projectCardBtnWrapper .viewMore {
+    background: transparent;
+    color: rgba(42, 138, 248, 0.9);
+    border: 1px solid rgba(42, 138, 248, 0.6);
+    transition: all 0.3s ease;
+}
+.projectCardBtnWrapper .viewMore:hover {
+    transform: scale(1.05);
+    /* color: rgba(255, 255, 255, 0.9); */
+    /* border-color: rgba(255, 255, 255, 0.9); */
+    transition: all 0.3s ease;
+}
+
+.projectCardBtnWrapper .liveSite {
+    background: rgba(42, 138, 248, 0.9);
+    color: rgba(255, 255, 255, 0.95);
+    filter: drop-shadow(0);
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.projectCardBtnWrapper .liveSite:hover {
+    transform: scale(1.05);
+    border-color: rgba(255, 255, 255, 0.9);
+    filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.125));
+    transition: all 0.3s ease;
+}
