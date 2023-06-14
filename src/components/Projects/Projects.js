@@ -100,7 +100,6 @@ const Projects = () => {
                     liveLink,
                     title,
                     description,
-                    technologies,
                     technologiesArr,
                 }) => {
                     return (
@@ -124,12 +123,13 @@ const Projects = () => {
                                             <div className="overlayTitle">
                                                 {title}
                                             </div>
-                                            <div>{description}</div>
+                                            <div className="projectDesc">
+                                                {description}
+                                            </div>
                                             <div className="overlayTech">
                                                 <span className="builtUsing">
                                                     Built using:
                                                 </span>
-                                                {/* <p>{technologies}</p> */}
                                                 <p className="techs">
                                                     {technologiesArr.map(
                                                         (tech) => {
