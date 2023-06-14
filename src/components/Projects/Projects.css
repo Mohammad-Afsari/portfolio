@@ -1,309 +1,310 @@
 :root {
-  --globalColor: rgb(42, 138, 248);
+    --globalColor: rgb(42, 138, 248);
 }
 
 .projects {
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 90vw;
-  margin: 100px auto;
-  gap: 5vw;
-}
-
-.projectsItem {
-  border-radius: 10px;
-  height: auto;
-  width: 40vw;
-  margin: auto;
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.projectImg {
-  /* box-shadow: 0 10px 50px whitesmoke; */
-  box-shadow: 0px 15px 30px -15px whitesmoke;
-  border-radius: 10px;
-}
-
-.projectImg:hover {
-  box-shadow: 0px 20px 30px -15px whitesmoke;
-  border-radius: 10px;
-  transition: 0.2s;
-}
-
-.buttonLinks a {
-  font-size: 26px;
-  padding: 20px;
-  color: whitesmoke;
-}
-
-.buttonLinks a:hover {
-  color: var(--globalColor);
-  transition: 0.2s;
-}
-
-@media (max-width: 1281px) {
-  .projects {
+    height: auto;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     width: 90vw;
     margin: 100px auto;
-    gap: 3vw;
-  }
-
-  .projectsItem {
-    /* height: 42vw; */
-    width: 42vw;
-    margin: auto;
-  }
-}
-
-@media (max-width: 961px) {
-  .projects {
-    grid-template-columns: 1fr;
-    width: 95vw;
-    margin: 100px auto;
-    gap: 1vw;
-  }
-
-  .projectsItem {
-    /* height: 80vw; */
-    width: 80vw;
-    margin: auto;
-  }
-}
-
-@media (max-width: 796px) {
-  .projects {
-    grid-template-columns: 1fr;
-    width: 90vw;
-    margin: 80px auto;
-    gap: 1vw;
-  }
-
-  .projectsItem {
-    /* height: 85vw; */
-    width: 85vw;
-    margin: auto;
-  }
-}
-
-@media (max-width: 480px) {
-  .projects {
-    grid-template-columns: 1fr;
-    width: 90vw;
-    margin: 50px auto;
-    gap: 0vw;
-  }
-
-  .projectsItem {
-    /* height: 80vw; */
-    width: 80vw;
-    margin: auto;
-  }
+    gap: 5vw;
 }
 
 .projectsItem {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  overflow: hidden;
-  flex-direction: column;
+    border-radius: 10px;
+    height: auto;
+    width: 40vw;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .projectImg {
-  max-width: 100%;
-  max-height: 100%;
+    /* box-shadow: 0 10px 50px whitesmoke; */
+    box-shadow: 0px 15px 30px -15px whitesmoke;
+    border-radius: 10px;
+}
+
+.projectImg:hover {
+    box-shadow: 0px 20px 30px -15px whitesmoke;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.buttonLinks a {
+    font-size: 26px;
+    padding: 20px;
+    color: whitesmoke;
+}
+
+.buttonLinks a:hover {
+    color: var(--globalColor);
+    transition: 0.2s;
+}
+
+@media (max-width: 1281px) {
+    .projects {
+        grid-template-columns: 1fr 1fr;
+        width: 90vw;
+        margin: 100px auto;
+        gap: 3vw;
+    }
+
+    .projectsItem {
+        /* height: 42vw; */
+        width: 42vw;
+        margin: auto;
+    }
+}
+
+@media (max-width: 961px) {
+    .projects {
+        grid-template-columns: 1fr;
+        width: 95vw;
+        margin: 100px auto;
+        gap: 1vw;
+    }
+
+    .projectsItem {
+        /* height: 80vw; */
+        width: 80vw;
+        margin: auto;
+    }
+}
+
+@media (max-width: 796px) {
+    .projects {
+        grid-template-columns: 1fr;
+        width: 90vw;
+        margin: 80px auto;
+        gap: 1vw;
+    }
+
+    .projectsItem {
+        /* height: 85vw; */
+        width: 85vw;
+        margin: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects {
+        grid-template-columns: 1fr;
+        width: 90vw;
+        margin: 50px auto;
+        gap: 0vw;
+    }
+
+    .projectsItem {
+        /* height: 80vw; */
+        width: 80vw;
+        margin: auto;
+    }
+}
+
+.projectsItem {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.projectImg {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .buttonLinks {
-  padding: 20px;
+    padding: 20px;
 }
 
 .projectDescription {
-  color: var(--globalColor);
-  font-weight: bold;
+    color: var(--globalColor);
+    font-weight: bold;
 }
 
 /*  ================================= PROJECT CARD =============================================  */
 
 .containerTest {
-  position: relative;
+    position: relative;
 }
 
 .image {
-  display: block;
-  width: 100%;
-  height: auto;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
-  background-color: rgb(42, 138, 248);
-  text-align: left;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgb(42, 138, 248);
+    text-align: left;
 }
 
 .containerTest:hover .overlay {
-  opacity: 1;
-  border-radius: 10px;
+    opacity: 1;
+    border-radius: 10px;
 }
 
 .text {
-  color: whitesmoke;
-  font-size: 18px;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  width: 90%;
-  height: 100%;
-  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-  font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    font-size: 18px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+    height: 100%;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .overlayContainer {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
 }
 
 .overlayContainer div {
-  margin-top: 20px;
+    margin-top: 8px;
 }
 
 .text div {
-  text-align: left;
+    text-align: left;
 }
 
 .overlayTitle {
-  text-decoration: underline;
-  color: rgb(1, 1, 20);
-  font-weight: bold;
+    text-decoration: underline;
+    color: rgb(1, 1, 20);
+    font-weight: bold;
 }
 
 .builtUsing {
-  text-decoration: underline;
-  color: rgb(1, 1, 20);
-  font-weight: bold;
+    text-decoration: underline;
+    color: rgb(1, 1, 20);
+    font-weight: bold;
 }
 
 .overlayTech {
-  margin: 0;
+    margin: 0;
 }
 
 .techs {
-  position: absolute;
-  margin-top: 10px;
+    position: absolute;
+    margin-top: 10px;
 }
 
 .techs span {
-  position: relative;
-  margin-right: 2%;
-  margin-bottom: 2%;
-  border: 1px solid black;
-  border-radius: 5px;
-  background-color: rgb(22, 68, 120);
+    position: relative;
+    display: inline-block;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(22, 68, 120);
 }
 
 @media (max-width: 981px) {
-  .text {
-    font-size: 18px;
-  }
+    .text {
+        font-size: 18px;
+    }
 
-  .overlayContainer div {
-    margin-top: 10px;
-  }
+    .overlayContainer div {
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 920px) {
-  .text {
-    font-size: 18px;
-  }
+    .text {
+        font-size: 18px;
+    }
 
-  .overlayContainer div {
-    margin-top: 30px;
-  }
+    .overlayContainer div {
+        margin-top: 15px;
+    }
 }
 
 @media (max-width: 769px) {
-  .text {
-    font-size: 18px;
-  }
+    .text {
+        font-size: 18px;
+    }
 
-  .overlayContainer div {
-    margin-top: 30px;
-  }
+    .overlayContainer div {
+        margin-top: 14px;
+    }
 }
 
 @media (max-width: 620px) {
-  .text {
-    font-size: 16px;
-  }
+    .text {
+        font-size: 16px;
+    }
 
-  .overlayContainer div {
-    margin-top: 20px;
-  }
+    .overlayContainer div {
+        margin-top: 14px;
+    }
 }
 
 @media (max-width: 480px) {
-  .text {
-    font-size: 16px;
-  }
+    .text {
+        font-size: 16px;
+    }
 
-  .overlayContainer div {
-    margin-top: 6px;
-  }
+    .overlayContainer div {
+        margin-top: 6px;
+    }
 }
 
 @media (max-width: 430px) {
-  .text {
-    font-size: 14px;
-  }
+    .text {
+        font-size: 14px;
+    }
 
-  .overlayContainer div {
-    margin-top: 6px;
-  }
+    .overlayContainer div {
+        margin-top: 6px;
+    }
 }
 
 @media (max-width: 380px) {
-  .text {
-    font-size: 12px;
-  }
+    .text {
+        font-size: 12px;
+    }
 
-  .overlayContainer div {
-    margin-top: 4px;
-  }
+    .overlayContainer div {
+        margin-top: 4px;
+    }
 }
 
 @media (max-width: 320px) {
-  .text {
-    font-size: 10px;
-  }
+    .text {
+        font-size: 10px;
+    }
 
-  .overlayContainer div {
-    margin-top: 2px;
-  }
+    .overlayContainer div {
+        margin-top: 2px;
+    }
 }
 
 @media (max-width: 280px) {
-  .text {
-    font-size: 9px;
-  }
+    .text {
+        font-size: 9px;
+    }
 
-  .overlayContainer div {
-    margin-top: 2px;
-  }
+    .overlayContainer div {
+        margin-top: 2px;
+    }
 }
