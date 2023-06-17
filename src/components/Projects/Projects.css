@@ -1,5 +1,6 @@
 :root {
     --globalColor: rgb(42, 138, 248);
+    --globalColorHover: rgb(89, 166, 255);
 }
 
 .projects {
@@ -25,6 +26,7 @@
     /* box-shadow: 0 10px 50px whitesmoke; */
     box-shadow: 0px 15px 30px -15px whitesmoke;
     border-radius: 10px;
+    /* aspect-ratio: 16/9; */
 }
 
 .projectImg:hover {
@@ -121,9 +123,17 @@
     padding: 20px;
 }
 
-.projectDescription {
+.projectDescription,
+.projectDescription a {
+    text-decoration: none;
     color: var(--globalColor);
     font-weight: bold;
+}
+
+.projectDescription a:hover {
+    position: cursor;
+    color: whitesmoke;
+    transform: 0.2s;
 }
 
 /*  ================================= PROJECT CARD =============================================  */

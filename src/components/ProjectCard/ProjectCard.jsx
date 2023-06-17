@@ -7,7 +7,7 @@ const projects = [
         project_desc:
             'Built, fixed bugs and maintained existing components for Sports Direct UK.',
         url: 'https://www.sportsdirect.com/',
-        image: '',
+        image: 'https://github.com/Mohammad-Afsari/portfolio/blob/master/src/components/imgs/sd-uk/sd-uk.png?raw=true',
     },
     // {
     //     id: 2,

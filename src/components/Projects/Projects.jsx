@@ -5,16 +5,54 @@ import { FiExternalLink } from 'react-icons/fi'
 
 const Projects = () => {
     const associatedProjects = [
+        // {
+        //     id: 1,
+        //     image: 'https://github.com/Mohammad-Afsari/portfolio/blob/master/src/components/imgs/sd-uk/sd-uk.png?raw=true',
+        //     githubLink: 'https://github.com/Mohammad-Afsari/todo_list',
+        //     liveLink: 'https://sportsdirect.com.my',
+        //     title: 'Sports Direct Malaysia',
+        //     description:
+        //         'An organisation app built to store your tasks and notes.',
+        //     technologiesArr: [
+        //         'HTML',
+        //         'CSS',
+        //         'PostCSS',
+        //         'TypeScript',
+        //         'React',
+        //         'Nextjs',
+        //         'GraphQL',
+        //         'Figma',
+        //     ],
+        // },
+        // {
+        //     id: 2,
+        //     image: 'https://github.com/Mohammad-Afsari/portfolio/blob/master/src/components/imgs/sd-uk/sd-uk.png?raw=true',
+        //     githubLink: 'https://github.com/Mohammad-Afsari/microblog',
+        //     liveLink: 'https://sportsdirect.com',
+        //     title: 'Sports Direct UK',
+        //     description:
+        //         'Sports Direct UK web application. Worked on various components from wish list, cart page, products details page and advertisement banners.',
+        //     technologiesArr: [
+        //         'HTML',
+        //         'CSS',
+        //         'SCSS',
+        //         'JavaScript',
+        //         'jQuery',
+        //         '.NET',
+        //         'C#',
+        //         'SQL Server',
+        //         'Dynamic Yield',
+        //         'Figma',
+        //     ],
+        // },
         {
-            id: 1,
+            id: 3,
             image: 'https://github.com/Mohammad-Afsari/portfolio/blob/master/src/components/imgs/strife.png?raw=true',
             githubLink: 'https://github.com/Mohammad-Afsari/chatroomz',
             liveLink: 'https://strifechatrooms.netlify.app/',
             title: 'Strife - chatroom service',
             description:
                 'A chatroom service where talking to people has been made easy - a full stack application built using supabase.',
-            technologies:
-                'React, Typescript, Supabase, MaterialUI, Postgresql, Zustand and react-query.',
             technologiesArr: [
                 'React',
                 'Typescript',
@@ -24,48 +62,26 @@ const Projects = () => {
                 'Postgresql',
                 'Zustand',
                 'react-query',
+                'Dribbble',
             ],
         },
         {
-            id: 2,
+            id: 4,
             image: 'https://github.com/Mohammad-Afsari/portfolio/blob/master/src/components/imgs/mdtanalytics.png?raw=true',
             githubLink: 'https://github.com/Mohammad-Afsari/mdtanalytics',
             liveLink: 'https://mdtanalytics.netlify.app/',
             title: 'MDT Analytics landing page',
             description: 'A landing page created for an analytics consultancy.',
-            technologies:
-                'React, Javascript, particlejs, CSS3, figma and dribbble.',
             technologiesArr: [
-                'React',
+                'HTML',
+                'CSS',
                 'Javascript',
+                'React',
                 'ParticleJS',
-                'CSS3',
                 'Figma',
                 'Dribbble',
             ],
         },
-        // {
-        //     id: 3,
-        //     image: 'https://github.com/Mohammad-Afsari/portfolio/blob/master/src/components/imgs/microblog.png?raw=true',
-        //     githubLink: 'https://github.com/Mohammad-Afsari/microblog',
-        //     liveLink: 'https://github.com/Mohammad-Afsari/microblog',
-        //     title: 'Micro blog page',
-        //     description:
-        //         'A Micro blog page created to save your favourite blogs!',
-        //     technologies: 'React, Javascript, JSON server, CSS3.',
-        //     technologiesArr: ['React', 'Javascript', 'JSON Server', 'CSS3'],
-        // },
-        // {
-        //     id: 4,
-        //     image: 'https://github.com/Mohammad-Afsari/portfolio/blob/master/src/components/imgs/organise.PNG?raw=true',
-        //     githubLink: 'https://github.com/Mohammad-Afsari/todo_list',
-        //     liveLink: 'https://mohammad-afsari.github.io/todo_list/#!',
-        //     title: 'Organise app',
-        //     description:
-        //         'An organisation app built to store your tasks and notes.',
-        //     technologies: 'HTML5, CSS3, Javascript, local storage.',
-        //     technologiesArr: ['HTML5', 'Javascript', 'Local Storage', 'CSS3'],
-        // },
         // {
         //     id: 5,
         //     image: 'https://github.com/Mohammad-Afsari/portfolio/blob/master/src/components/imgs/d-lish.png?raw=true',
@@ -74,7 +90,6 @@ const Projects = () => {
         //     title: 'D-Lish resturant landing page',
         //     description:
         //         'A landing page for a fictional resturant page showcasing affordable, authentic healthy food!',
-        //     technologies: 'HTML5, CSS3, JavaScript, ES5/ES6.',
         //     technologiesArr: ['HTML5', 'CSS3', 'JavaScript', 'ES5/ES6'],
         // },
         // {
@@ -85,7 +100,6 @@ const Projects = () => {
         //     liveLink: 'https://mohammad-afsari.github.io/weather_application/',
         //     title: 'Weather application',
         //     description: 'Weather application using the OpenWeather API.',
-        //     technologies: 'HTML5, CSS3, Javascript, weatherAPI.',
         //     technologiesArr: ['HTML5', 'CSS3', 'Javascript', 'OpenWeatherAPI'],
         // },
     ]
@@ -104,7 +118,16 @@ const Projects = () => {
                 }) => {
                     return (
                         <article className="projectsItem" key={id}>
-                            <p className="projectDescription">{title}</p>
+                            <p className="projectDescription">
+                                {' '}
+                                <a
+                                    href={liveLink}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    {title}
+                                </a>
+                            </p>
                             <div className="imgContainer containerTest">
                                 <div
                                     href={liveLink}
@@ -148,7 +171,7 @@ const Projects = () => {
                                 </div>
                             </div>
                             <div className="buttonLinks">
-                                <a
+                                {/* <a
                                     href={githubLink}
                                     target="_blank"
                                     rel="noreferrer"
@@ -161,7 +184,7 @@ const Projects = () => {
                                     rel="noreferrer"
                                 >
                                     <FiExternalLink />
-                                </a>
+                                </a> */}
                             </div>
                         </article>
                     )
