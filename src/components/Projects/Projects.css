@@ -136,6 +136,12 @@
     transform: 0.2s;
 }
 
+.projectDescription a span {
+    font-size: 10px;
+    vertical-align: super;
+    padding-left: 2px;
+}
+
 /*  ================================= PROJECT CARD =============================================  */
 
 .containerTest {
