@@ -5,46 +5,46 @@ import { FiExternalLink } from 'react-icons/fi'
 
 const Projects = () => {
     const associatedProjects = [
-        // {
-        //     id: 1,
-        //     image: 'https://github.com/Mohammad-Afsari/portfolio/blob/master/src/components/imgs/sd-uk/sd-uk.png?raw=true',
-        //     githubLink: 'https://github.com/Mohammad-Afsari/todo_list',
-        //     liveLink: 'https://sportsdirect.com.my',
-        //     title: 'Sports Direct Malaysia',
-        //     description:
-        //         'An organisation app built to store your tasks and notes.',
-        //     technologiesArr: [
-        //         'HTML',
-        //         'CSS',
-        //         'PostCSS',
-        //         'TypeScript',
-        //         'React',
-        //         'Nextjs',
-        //         'GraphQL',
-        //         'Figma',
-        //     ],
-        // },
-        // {
-        //     id: 2,
-        //     image: 'https://github.com/Mohammad-Afsari/portfolio/blob/master/src/components/imgs/sd-uk/sd-uk.png?raw=true',
-        //     githubLink: 'https://github.com/Mohammad-Afsari/microblog',
-        //     liveLink: 'https://sportsdirect.com',
-        //     title: 'Sports Direct UK',
-        //     description:
-        //         'Sports Direct UK web application. Worked on various components from wish list, cart page, products details page and advertisement banners.',
-        //     technologiesArr: [
-        //         'HTML',
-        //         'CSS',
-        //         'SCSS',
-        //         'JavaScript',
-        //         'jQuery',
-        //         '.NET',
-        //         'C#',
-        //         'SQL Server',
-        //         'Dynamic Yield',
-        //         'Figma',
-        //     ],
-        // },
+        {
+            id: 1,
+            image: 'https://github.com/Mohammad-Afsari/portfolio/blob/master/src/components/imgs/sd-my/sd-my.png?raw=true',
+            githubLink: 'https://github.com/Mohammad-Afsari/todo_list',
+            liveLink: 'https://sportsdirect.com.my',
+            title: 'Sports Direct Malaysia',
+            description:
+                'Built and maintained many components across the website including products list page filters, search suggestions, products detail page sticky features.',
+            technologiesArr: [
+                'HTML',
+                'CSS',
+                'PostCSS',
+                'TypeScript',
+                'React',
+                'Nextjs',
+                'GraphQL',
+                'Figma',
+            ],
+        },
+        {
+            id: 2,
+            image: 'https://github.com/Mohammad-Afsari/portfolio/blob/master/src/components/imgs/sd-uk/sd-uk.png?raw=true',
+            githubLink: 'https://github.com/Mohammad-Afsari/microblog',
+            liveLink: 'https://sportsdirect.com',
+            title: 'Sports Direct UK',
+            description:
+                'Worked on various components from wish list, cart page, products details page and advertisement banners.',
+            technologiesArr: [
+                'HTML',
+                'CSS',
+                'SCSS',
+                'JavaScript',
+                'jQuery',
+                '.NET',
+                'C#',
+                'SQL Server',
+                'Dynamic Yield',
+                'Figma',
+            ],
+        },
         {
             id: 3,
             image: 'https://github.com/Mohammad-Afsari/portfolio/blob/master/src/components/imgs/strife.png?raw=true',
@@ -126,6 +126,9 @@ const Projects = () => {
                                     rel="noreferrer"
                                 >
                                     {title}
+                                    <span>
+                                        <FiExternalLink />
+                                    </span>
                                 </a>
                             </p>
                             <div className="imgContainer containerTest">
