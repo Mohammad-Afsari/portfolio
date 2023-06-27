@@ -7,7 +7,7 @@ const Projects = () => {
     const associatedProjects = [
         {
             id: 1,
-            image: 'https://github.com/Mohammad-Afsari/portfolio/blob/master/src/components/imgs/sd-my/sd-my.png?raw=true',
+            image: 'https://github.com/Mohammad-Afsari/portfolio/blob/master/src/components/imgs/sd-my/sdmy.png?raw=true',
             githubLink: 'https://github.com/Mohammad-Afsari/todo_list',
             liveLink: 'https://sportsdirect.com.my',
             title: 'Sports Direct Malaysia',
