@@ -43,6 +43,5 @@ This project is open source and available under the [MIT License](LICENSE).
 
 Feel free to reach out to me if you have any questions or suggestions:
 
-- **Email**: [Your Email Here]
-- **LinkedIn**: [Your LinkedIn URL Here]
-- **Portfolio**: [Link to Live Portfolio Website]
+- [LinkedIn](https://www.linkedin.com/in/mohammad-afsari-77432b7b/)
+- [Portfolio](https://www.afsari.co.uk/)
