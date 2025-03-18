@@ -18,6 +18,8 @@ import { SiAmazondynamodb } from 'react-icons/si'
 import { GrGraphQl } from 'react-icons/gr'
 import { SiStorybook } from 'react-icons/si'
 import { SiTestinglibrary } from 'react-icons/si'
+import { FaNodeJs } from 'react-icons/fa'
+import { SiExpress } from 'react-icons/si'
 
 const Skills = () => {
     return (
@@ -44,7 +46,15 @@ const Skills = () => {
                 </div>
             </section>
             <section className="back-end">
-                <h2>Backend (Database Systems)</h2>
+                <h2>Backend</h2>
+                <div className="back-end skillItem node">
+                    <FaNodeJs />
+                    <span>Node</span>
+                </div>
+                <div className="back-end skillItem express">
+                    <SiExpress />
+                    <span>Express</span>
+                </div>
                 <div className="back-end skillItem tsql">
                     <DiMsqlServer />
                     <span>SQL Server (T-SQL)</span>
