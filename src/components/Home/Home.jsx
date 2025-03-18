@@ -10,7 +10,7 @@ import aos from 'aos'
 import 'aos/dist/aos.css'
 import CV from '../Assets/Mohammad-A_CV.pdf'
 
-const messages = ['Frontend Developer', 'Engineer', 'Freelancer']
+const messages = ['Full Stack Engineer', 'Engineer', 'Freelancer']
 
 const Home = () => {
     const [index, setIndex] = useState(0)
